@@ -1,0 +1,38 @@
+/* ./your-css-folder/styles.css */
+/* @import url('../public/fonts/GTWalsheimPro-Regular.woff'); */
+@font-face { 
+    font-family:regular; 
+    src: url('../public/fonts/GTWalsheimPro-Regular.woff'); 
+} 
+@font-face { 
+    font-family:light; 
+    src: url('../public/fonts/GTWalsheimPro-Light.woff'); 
+} 
+@font-face { 
+    font-family:big; 
+    src: url('../public/fonts/GTWalsheimPro-Bold.woff'); 
+} 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply rounded-full transition px-4 text-20 cursor-pointer tracking-wider;
+}
+.btn2{
+    @apply rounded-full transition text-20 cursor-pointer tracking-wider;
+}
+.linear{
+    background:linear-gradient(360deg, rgba(133,23,137,0.85) 0%, rgba(100, 28, 152, 0.85) 33%, rgba(60, 107, 172, 0.85) 55%, rgba(82, 187, 235, 1) 100%);
+}
+.linear2{
+    background:linear-gradient(0deg, rgb(30 64 163 / 87%) 9%, rgba(82,185,234,1) 100%);
+}
+.banner-mask{
+    width: auto;
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}

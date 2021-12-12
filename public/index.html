@@ -1,0 +1,917 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-body">
+    <!-- Sidebar -->
+    <div class="fixed z-20 hidden sm:w-w700 w-full bg-secondary sm:px-28 px-3 pt-4 sm:pt-60 pb-11 sm:pb-24 right-0  rounded-bl-3xl shadow-md top-0">
+      <div class="absolute top-4 sm:top-9 right-4 sm:right-32 w-w55 h-hei55 flex items-center justify-center bg-white bg-opacity-20 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+
+      <ul class="mb-7">
+        <li class="block">
+          <a href="" class="text-20 sm:text-55 text-white font-bold mb-4 cursor-pointer">Online theorie</a>
+        </li>
+        <li>
+          <a href="" class="text-20 sm:text-55 text-white font-bold mb-4 cursor-pointer">Pakketten</a>
+        </li>
+        <li>
+          <a href="" class="text-20 sm:text-55 text-white font-bold mb-4 cursor-pointer">Over ons</a>
+        </li>
+        <li>
+          <a href="" class="text-20 sm:text-55 text-white font-bold mb-4 cursor-pointer">FAQ</a>
+        </li>
+        <li>
+          <a href="" class="text-20 sm:text-55 text-white font-bold mb-4 cursor-pointer">Contact</a>
+        </li>
+      </ul>
+
+      <button class="btn mb-7 h-hei63 sm:h-hei75 flex-initial text-white bg-primary hover:bg-primaryHover">
+        Probeer 3 dagen gratis
+        <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <ul class="flex-1">
+        <li class="sm:inline block">
+          <a class="text-20 font-bold text-white" href="">
+            <svg class="w-6 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            0515 432 567
+          </a>
+        </li>
+        <li class="sm:inline block sm:ml-3 mt-4 sm:mt-0">
+          <a class="text-20 font-bold text-white" href="">
+            <svg class="w-6 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            info@wegpiraat.nl
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar -->
+    
+    <!-- Banner -->
+    <div class="linear relative overflow-hidden z-10">
+      <div class="linear absolute z-0 h-full w-full top-0 right-0"></div>
+      <div class="sm:container relative z-10 px-4 sm:px-0">
+        <div class="flex sm:py-9 py-4 items-center">
+          <div class="flex-1">
+            <a href="">
+              <img class="sm:w-w220 w-40 h-auto" src="img/logo.png" alt="" title="">
+            </a>
+          </div>
+
+          <div class="flex-initial">
+            <ul>
+              <li class="ml-2 hidden sm:inline-block">
+                <button class="btn2 h-hei35 sm:h-hei55 sm:px-4 px-0  bg-opacity-20 bg-white text-white hover:bg-opacity-40 ">Online theorie</button>
+              </li>
+              <li class="hidden sm:inline-block ml-2">
+                <button class="btn2 h-hei35 sm:h-hei55 sm:px-4 px-0  bg-opacity-20 bg-white text-white hover:bg-opacity-40 ">Pakketten</button>
+              </li>
+              <li class="hidden sm:inline-block ml-2">
+                <button class="btn2 h-hei35 lg:h-hei55 sm:px-4 px-0  bg-opacity-20 bg-white text-white hover:bg-opacity-40 ">Probeer 3 dagen gratis</button>
+              </li>
+              <li class="inline-block ml-2">
+                <button class="btn2 h-hei44 w-w44 sm:w-auto sm:px-4 px-0 sm:h-hei55 bg-opacity-20 bg-white text-white hover:bg-opacity-40 ">
+                  <span class="hidden sm:inline">Login</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="inline-block ml-2">
+                <button class="btn2 h-hei44 w-w44 sm:w-auto sm:h-hei55 px-0 sm:px-4  bg-opacity-20 bg-white text-white hover:bg-opacity-40 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container relative z-10">
+        <div class="relative z-10 pt-6 sm:pt-10 pb-28 sm:pb-52">
+          <div class="sm:flex items-end sm:pt-20 pt-5 pb-12">
+            <div class="flex-1 lg:pl-28">
+              <h1 class="font-bold text-42l1 sm:text-6xl text-white mb-5 sm:mb-3 max-w-xl">
+                Slaag in één keer
+                met de beste online
+                theoriecursus!
+              </h1>
+              <div class="sm:flex items-center">
+                <button class="btn h-hei63 sm:h-hei75 flex-initial text-white bg-primary hover:bg-primaryHover">
+                  Bekijk voorbeeldles
+                  <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+
+                <p class="btn flex-initial mt-4 sm:mt-0 ml-3 text-white">Of kies een pakket</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute w-full" style="bottom:-2px">
+        <div class="absolute  bottom-6 sm:bottom-24 xl:bottom-40 cursor-pointer text-center z-10" style="left:50%; transform: translateX(-50%);">
+          <img class="h-10 w-10 inline-block" src="img/down.png" alt="" title="">
+          <p class="text-gray-400 hover:text-gray-500">scroll verder</p>
+        </div>
+
+        <img class="relative w-full banner-mask h-hei166 sm:h-hei355 xl:h-hei507" src="img/road.svg" alt="" title="">
+      </div>
+      <img class="absolute h-auto w-full sm:w-w300 lg:w-w700 -bottom-7 sm:bottom-0 lg:bottom-36 right-0 sm:right-0 lg:right-12 opacity-10" src="img/banner.png" alt="" title="">
+      <img class="absolute w-full h-full object-cover top-0 left-0" style="z-index: -1;" src="img/bg.png" alt="" title="">
+    </div>
+    <!-- Banner -->
+    
+    <!-- De voordelen -->
+    <div class="bg-white py-16">
+      <div class="container">
+        <h1 class="2xl:text-42 text-28 font-bold text-primary sm:text-center mb-2">
+          De voordelen 
+          <img class="inline-block w-8 h-auto sm:w-10" src="img/perfect.svg" alt="" title="">
+          van online theorie
+        </h1>
+
+        <p class="2xl:max-w-6xl max-w-3xl font-own-light font-light m-auto mb-9 text-1 2xl:text-28 text-20 sm:text-center">
+          Volg onze <a href="" class="underline font-bold hover:text-gray-500">online theoriecursus:</a> beheers de leerstof volledig en slaag snel en
+          verantwoord voor het CBR examen. We slaan niets over en behandelen alles
+          wat jij straks kan verwachten op het theorie-examen.
+        </p>
+
+        <div class="sm:grid grid-cols-3 gap-x-6">
+          <div class="2xl:p-8 p-4 sm:mb-0 mb-6 bg-five border-four border-b-4 rounded-md overflow-hidden">
+            <h1 class="2xl:text-32 text-24 font-big text-secondary mb-1.5">Leer tot 4x sneller</h1>
+
+            <p class="2xl:text-28 text-20 text-1">
+              Met onze online theorie cursussen
+              leer je tot 8x sneller dan met een
+              boek. Je hoeft dus géén boek van
+              250+ pagina
+              ’
+              s meer te lezen.
+            </p>
+          </div>
+          <div class="2xl:p-8 p-4 sm:mb-0 mb-6 bg-five border-four border-b-4 rounded-md overflow-hidden">
+            <h1 class="2xl:text-32 text-24 font-big text-secondary mb-1.5">Altijd en overal</h1>
+
+            <p class="2xl:text-28 text-20 text-1">
+              Onderweg op je mobiel of
+              thuis achter je laptop de
+              vragen oefenen? De
+              theoriecursus is ook geschikt
+              voor mobiel.
+            </p>
+          </div>
+          <div class="2xl:p-8 p-4 sm:mb-0 mb-6 bg-five border-four border-b-4 rounded-md overflow-hidden">
+            <div class="flex">
+              <div class="flex-1">
+                <h1 class="2xl:text-32 text-24 font-big text-secondary mb-1.5">4,3/5</h1>
+              </div>
+              <div class="flex-initial flex">
+                <div class="flex-initial">
+                  <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="flex-initial">
+                  <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="flex-initial">
+                  <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="flex-initial">
+                  <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="flex-initial">
+                  <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <p class="2xl:text-28 text-20 text-1">
+              Onze online cursus wordt goed
+              beoordeeld. Lees <a href="" class="underline font-bold hover:text-gray-500">hier</a> alle reviews
+              van onze wegpiraten.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- De voordelen -->
+
+    <!-- 3 dagen -->
+    <div class="linear2 py-16 relative">
+      <div class="linear2 absolute z-10 h-full w-full top-0 right-0"></div>
+      <div class="container relative z-10">
+        <h1 class="text-white 2xl:text-42 text-28 font-bold sm:text-center mb-1.5">3 dagen gratis oefenen?</h1>
+        <p class="2xl:text-28 font-light text-20 text-white mb-7 sm:text-center">Neem de proef op de som: test nu je theorie kennis.</p>
+        <div class="sm:text-center">
+          <button class="btn h-hei63 sm:h-hei75 text-white bg-primary hover:bg-primaryHover">
+            Ja, ik wil gratis oefenen
+            <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      
+      <img class="absolute bottom-0 z-0 left-0 w-full hidden lg:block" src="img/MaskBlue.png" alt="" title="">
+      <img class="absolute bottom-0 z-0 sm:right-20 right-0 w-48" style="bottom: -20px;" src="img/Composite.png" alt="" title="">
+    </div>
+    <!-- 3 dagen -->
+
+    <!-- Auto theorie -->
+    <div class="bg-white py-16">
+      <div class="container">
+        <div class="sm:flex sm:space-x-10 items-center">
+          <div class="sm:flex-1 xl:flex-initial mb-8 sm:mb-0">
+            <img class="max-w-xl h-auto w-full" src="img/manOne.png" alt="" title="">
+          </div>
+          <div class="sm:flex-1 xl:flex-1">
+            <h1 class="text-primary 2xl:text-42 text-28 font-bold mb-1.5">Auto theorie oefenen</h1>
+            <p class="2xl:text-28 font-light text-20 text-1 mb-7 pb-5">
+              Eén platform met oefenvragen over alle onderwerpen. De
+              oefenvragen zijn verdeeld per onderdeel van het CBR examen.
+              Zo kun je waar nodig gericht oefenen voor het examen.
+              Oefening baart kunst.
+            </p>
+            <div class="sm:flex items-center">
+              <button class="btn h-hei63 sm:h-hei75 flex-initial text-white bg-primary hover:bg-primaryHover">
+                Bekijk voorbeeldles
+                <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <p class="btn flex-initial mt-4 sm:mt-0 ml-3 text-1">Of kies een pakket</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Auto theorie -->
+    
+    <!-- CBR theorie-examens -->
+    <div class="py-16 relative overflow-hidden">
+      <div class="linear absolute z-10 h-full w-full top-0 right-0"></div>
+      <div class="container relative z-10">
+        <div class="sm:flex items-center">
+          <div class="sm:flex-1 xl:flex-initial mb-8 sm:mb-0 sm:order-last">
+            <img class="max-w-xl h-auto w-full" src="img/app_two.png" alt="" title="">
+          </div>
+          <div class="sm:flex-1 xl:flex-1 sm:order-first sm:pr-16">
+            <h1 class="text-white 2xl:text-42 text-28 font-bold mb-1.5">CBR theorie-examens
+              <img class="inline w-9 sm:w-11 relative -top-1" src="img/muscle.svg" alt="" title="">
+            </h1>
+            <p class="2xl:text-28 font-light text-20 text-white mb-7 pb-5">
+              Klaar voor het CBR examen? Bewijs het jezelf! Weet precies wat
+              je te wachten staat: geen verrassingen. Vergelijkbare vragen en
+              een soortgelijke omgeving zoals bij het CBR examen om jezelf
+              perfect mee te testen.
+            </p>
+            <div class="">
+              <button class="btn h-hei63 sm:h-hei75 flex-initial text-white bg-primary hover:bg-primaryHover">
+                Bekijk voorbeeldles
+                <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img class="absolute bottom-0 z-0 left-0 w-full object-cover h-full" src="img/bg.png" alt="" title="">
+    </div>
+    <!-- CBR theorie-examens -->
+
+    <!-- Pricing -->
+    <div class="bg-white py-16">
+      <div class="container px-3">
+        <h1 class="2xl:text-42 text-28 font-bold text-primary sm:text-center mb-2">
+          Snel en gemakkelijk je auto theorie leren 
+          <img class="inline w-8 sm:w-10 relative -top-1" src="img/nerd.svg" alt="" title="">
+        </h1>
+
+        <p class="2xl:max-w-6xl max-w-3xl font-own-light font-light m-auto mb-9 text-1 2xl:text-28 text-20 sm:text-center">
+          Alle pakketten starten met een proefperiode van 3 dagen.
+        </p>
+
+        <div class="sm:flex sm:space-x-8 pt-1">
+          <div class="flex-1 p-8 rounded-md shadow-shadowOne overflow-hidden border-t-4 border-white sm:mb-0 mb-5">
+            <div class="border-four pb-3 text-center">
+              <h1 class="2xl:text-42 text-28 font-bold text-primary text-center mb-2">2 dagen</h1>
+              <h1 style="font-weight: 900;" class="2xl:text-7xl text-6xl font-bolder text-primary text-center mb-2">7,95</h1>
+              <del class="text-2 sm:text-28 text-20 text-center">Van 12,95, voor 7,95 </del>
+            </div>
+
+            <div class="border-b border-t border-gray-100 py-4">
+              <p class="sm:text-20 text-18 text-2 text-center">Ideaal voor last-minute oefenen.
+                Al 450 leerlingen gingen je voor!</p>
+            </div>
+
+            <div class="pt-7">
+              <h1 class="text-primary sm:text-28 text-20 mb-2">Inhoud pakket</h1>
+
+              <ul class="pl-6">
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt toegang tot alle oefenvragen
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt examens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Toegang tot alle videos
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  5 CBR oefenexamens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Verlengen is mogelijk
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <button class="btn w-full h-hei63 sm:h-hei75 bg-gray-100 text-gray-600 hover:bg-primary hover:text-white">Ik wil dit pakket</button>
+            </div>
+          </div>
+
+          <div class="flex-1 p-8 rounded-md sm:mb-0 mb-5 shadow-shadowOne overflow-hidden border-t-4  border-secondary">
+            <div class="border-four pb-3">
+              <h1 class="2xl:text-42 text-28 font-bold text-primary text-center mb-2">7 dagen</h1>
+              <h1 style="font-weight: 900;" class="2xl:text-7xl text-6xl font-bolder text-primary text-center mb-2">14,95</h1>
+              <p class="text-2 sm:text-28 text-20 text-center font-bold">Meest gekozen pakket</p>
+            </div>
+
+            <div class="border-b border-t border-gray-100 py-4">
+              <p class="sm:text-20 text-18 text-2 text-center">Binnen 2 weken je auto theorie
+                behalen? Start hier met leren!</p>
+            </div>
+
+            <div class="pt-7">
+              <h1 class="text-primary sm:text-28 text-20 mb-2">Inhoud pakket</h1>
+
+              <ul class="pl-6">
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt toegang tot alle oefenvragen
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt examens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Toegang tot alle videos
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  5 CBR oefenexamens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Verlengen is mogelijk
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <button class="btn w-full h-hei63 sm:h-hei75 bg-primary  hover:bg-primaryHover text-white">
+                Ik wil dit pakket
+                <img class="inline w-5 sm:w-8 relative -top-0.5" src="img/perfect.svg" alt="" title="">
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-1 rounded-md sm:mb-0 mb-5 p-8 shadow-shadowOne overflow-hidden border-t-4 border-white hover:border-secondary">
+            <div class="border-four pb-3">
+              <h1 class="2xl:text-42 text-28 font-bold text-primary text-center mb-2">14 dagen</h1>
+              <h1 style="font-weight: 900;" class="2xl:text-7xl text-6xl font-bolder text-primary text-center mb-2">29,95</h1>
+              <p class="text-2 sm:text-28 text-20 text-center">Elders 39,95</p>
+            </div>
+
+            <div class="border-b border-t border-gray-100 py-4">
+              <p class="sm:text-20 text-18 text-2 text-center">Basiskennis in huis maar je wil nog
+                even verder oefenen?</p>
+            </div>
+
+            <div class="pt-7">
+              <h1 class="text-primary sm:text-28 text-20 mb-2">Inhoud pakket</h1>
+
+              <ul class="pl-6">
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt toegang tot alle oefenvragen
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Onbeperkt examens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Toegang tot alle videos
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  5 CBR oefenexamens
+                </li>
+                <li class="sm:text-20 text-18 text-2 mb-2">
+                  <span class="w-5 h-5 mr-2 rounded-full inline-flex justify-center items-center bg-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  Verlengen is mogelijk
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-8">
+              <button class="btn w-full h-hei63 sm:h-hei75 bg-gray-100 text-gray-600 hover:bg-primary hover:text-white">Ik wil dit pakket</button>
+            </div>
+
+            <p class="text-20 pt-4 text-center" style="color:#3EA6D6">Probeer 3 dagen gratis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing -->
+
+    <!-- 3 dagen -->
+    <div class="linear2 overflow-hidden py-16 relative">
+      <div class="linear2 absolute z-10 h-full w-full top-0 right-0"></div>
+      <div class="container relative z-10">
+        <h1 class="text-white 2xl:text-42 text-28 font-bold sm:text-center mb-1.5">
+          Geef een online theorie cursus cadeau
+          party
+          <img class="inline w-5 sm:w-8 relative -top-1" src="img/party.svg" alt="" title="">
+        </h1>
+        <p class="2xl:text-28 font-light text-20 text-white mb-7 sm:text-center">Hoe leuk is het om een cadeau te geven waar iemand echt iets aan heeft?</p>
+        <div class="sm:text-center">
+          <button class="btn h-hei63 sm:h-hei75 text-white bg-primary hover:bg-primaryHover">
+            Ik wil een cadeaubon!
+            <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      
+      <img class="absolute bottom-0 z-0 left-0 w-full hidden lg:block" src="img/MaskBlue.png" alt="" title="">
+      <img class="absolute bottom-0 z-0 sm:right-20 right-0 w-48" style="bottom: -20px;" src="img/Composite.png" alt="" title="">
+    </div>
+    <!-- 3 dagen -->
+
+    <!-- Trotse Wegpiraten -->
+    <div class="bg-white pt-16 pb-20 relative z-10">
+      <div class="overflow-hidden py-1">
+        <div class="container relative z-10">
+          <div class="sm:flex space-x-1 mb-5">
+            <div class="flex-1">
+              <h1 class="2xl:text-42 text-28 font-bold text-primary mb-2">
+                Trotse Wegpiraten
+                <img class="inline w-5 sm:w-8 relative -top-1" src="img/awesome.svg" alt="" title="">
+              </h1>
+
+              <p class="2xl:max-w-6xl max-w-3xl font-own-light font-light text-1 2xl:text-28 text-20">
+                Lees hieronder de reviews van alle Wegpiraten
+              </p>
+            </div>
+
+            <div class="flex-initial">
+              <div class="mx-auto my-6">
+                <div class="max-w-xs flex items-center bg-white rounded-md p-5 border-t-4 border-green-600">
+                  <div class="flex-initial">
+                    <img class="w-12 h-auto" src="img/gogole.png" alt="" title="">
+                  </div>
+                  <div class="flex-1 pl-3">
+                    <div class="flex">
+                      <div class="flex-initial">
+                        <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                      <div class="flex-initial">
+                        <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                      <div class="flex-initial">
+                        <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                      <div class="flex-initial">
+                        <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                      <div class="flex-initial">
+                        <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                    </div>
+    
+                    <p class="sm:text-28 text-20 text-2"><strong>4.3</strong> (185 reviews)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex sm:grid grid-cols-4 justify-start sm:gap-5 space-x-5 sm:space-x-0">
+            <div class="flex sm:block  space-x-5 sm:space-x-0">
+              <div class="sm:flex-1 mb-5 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-primary font-bold pl-3">Eva Julia</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  In 1 woord fantastisch! Een echte
+                  aanrader! In één keer geslaagd voor
+                  mijn autotheorie. Een week intensief
+                  geoefend. Talloze vragen
+                  doorgenomen. Echt een handig en
+                  leerzaam platform.
+                </p>
+              </div>
+              <div class="sm:flex-1 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-primary font-bold pl-3">Ruben Hellingwerf </h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Dit werkt echt goed. Onderweg naar
+                  school op mijn mobiel of thuis op de
+                  laptop. Het werkt overal perfect.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex sm:block  space-x-5 sm:space-x-0">
+              <div class="sm:flex-1 mb-5 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-secondary font-bold pl-3">Marco Pietersma</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Theorielessen volg je via wegpiraat.
+                  Goedkoop, gemakkelijk en lekker
+                  simpel.
+                </p>
+              </div>
+              <div class="sm:flex-1 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-secondary font-bold pl-3">Sharon Hawkins</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Deze curcus is me erg goed bevallen,
+                  had zelf nog niks geleerd aan theorie
+                  examen dus heb het pakket van 2
+                  weken gekozen. Je kan echt overal
+                  de cursus volgen. Even inloggen
+                  onderweg in de trein of thuis op de
+                  bank. Je pakt de cursus op elk
+                  moment van de dag gewoon op.
+                  Echt handig!
+                </p>
+              </div> 
+            </div>
+
+            <div class="flex sm:block space-x-5 sm:space-x-0">
+              <div class="sm:flex-1  mb-5 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-primary font-bold pl-3">Fenna Oosterkamp</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Je leert precies wat je moet weten
+                  voor het examen en dat op een leuke
+                  manier met veel oefenvragen. Ik
+                  raad Wegpiraten heel erg aan (het is
+                  een fijn platform in tegenstelling tot
+                  vele andere online website!)
+                </p>
+              </div> 
+              <div class="sm:flex-1 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-primary font-bold pl-3">Amna Nicolai</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Een aanrader voor iedereen die zijn
+                  auto theorie wil halen!
+                </p>
+              </div>
+            </div>
+
+            <div class="flex sm:block space-x-5 sm:space-x-0">
+              <div class="sm:flex-1 mb-5 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-secondary font-bold pl-3">Nick Dorland</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Na het aanmelden kun je meteen
+                  aan de slag met 100+ oefenvragen
+                  en een examenvraag. Het ziet er
+                  precies zo uit als het CBR. Handig
+                  hoor!
+                </p>
+              </div>
+              <div class="sm:flex-1 rounded-md p-5 shadow-shadowOne bg-white flex-auto min-w-minW90 sm:w-full">
+                <div class="flex mb-5 items-center">
+                  <div class="overflow-hidden rounded-full" style="width: 50px;height:50px">
+                    <img class="w-full h-full object-cover" src="img/malea.jpg" alt="" title="">
+                  </div>
+  
+                  <h1 class="sm:text-20 text-18 text-secondary font-bold pl-3">Frank Corbier</h1>
+                </div>
+  
+                <p class="text-sm text-2">
+                  Na 1 keer geslaagd dankzij de
+                  handige oefenvragen van
+                  Wegpiraat.
+                </p>
+              </div> 
+            </div>
+          </div>
+
+          <ul class="text-center sm:hidden">
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-primary bg-primary"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+            <li class="inline-block rounded-full w-3 h-3 cursor-pointer border-2 border-gray-500 bg-white"></li>
+          </ul>
+        </div>
+      </div>
+
+      <img class="absolute z-0 right-3 hidden sm:block max-w-md opacity-10 h-auto w-full" style="bottom:-50px" src="img/CompositeLays.png" alt="" title="">
+    </div>
+    <!-- Trotse Wegpiraten -->
+
+    <!-- Footer -->
+    <footer class="linear relative overflow-hidden">
+      <img class="absolute w-full h-auto top-0 right-0 sm:hidden" src="img/road-mobile-footer.svg" alt="" title="">
+      <img class="absolute sm:w-full h-hei75 w-auto sm:h-auto hidden sm:block" style="right: -100px;max-height:400px;top: -5px; max-width: none;" src="img/Mask@1X.png" alt="" title="">
+      <div class="container">
+        <div class="sm:flex items-end border-b border-white pt-28 pb-12">
+          <div class="flex-1">
+            <h1 class="font-bold text-42l1 sm:text-6xl text-white sm:mb-3 mb-5 max-w-sm">
+              Slaag in één keer
+              met de beste online
+              theoriecursus!
+            </h1>
+            <div class="sm:flex items-center">
+              <button class="btn h-hei63 sm:h-hei75 flex-initial text-white bg-primary hover:bg-primaryHover">
+                Bekijk voorbeeldles
+                <svg class="inline ml-1 w-5 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <p class="btn flex-initial mt-4 sm:mt-0 ml-3 text-white">Of kies een pakket</p>
+            </div>
+          </div>
+
+          <div class="flex-initial sm:block hidden">
+            <div class="max-w-xs flex items-center bg-white rounded-md p-5 border-t-4 border-green-600">
+              <div class="flex-initial">
+                <img class="w-12 h-auto" src="img/gogole.png" alt="" title="">
+              </div>
+              <div class="flex-1 pl-3">
+                <div class="flex">
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <p class="sm:text-28 text-20 text-2"><strong>4.3</strong> (185 reviews)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:flex py-10">
+          <ul class="flex-1">
+            <li class="sm:inline block text-center">
+              <a class="text-20 font-bold text-white" href="">
+                <svg class="w-6 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                0515 432 567
+              </a>
+            </li>
+            <li class="sm:inline block text-center sm:ml-3 mt-4 sm:mt-0">
+              <a class="text-20 font-bold text-white" href="">
+                <svg class="w-6 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                info@wegpiraat.nl
+              </a>
+            </li>
+          </ul>
+
+          <div class="sm:block mx-auto my-6 sm:hidden">
+            <div class="max-w-xs flex items-center bg-white rounded-md p-5 border-t-4 border-green-600">
+              <div class="flex-initial">
+                <img class="w-12 h-auto" src="img/gogole.png" alt="" title="">
+              </div>
+              <div class="flex-1 pl-3">
+                <div class="flex">
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <div class="flex-initial">
+                    <svg style="width: 20px; color:#ffc725" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <p class="sm:text-28 text-20 text-2"><strong>4.3</strong> (185 reviews)</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="flex-initial">
+            <li class="sm:inline block text-center">
+              <span class="text-md sm:pr-3 text-white">
+                © Wegpiraat 2021 
+              </span>
+            </li>
+            <li class="sm:inline block text-center">
+              <a href="" class="text-md sm:px-3 py-2 sm:py-0 underline text-white sm:border-l border-white">
+                Algemene voorwaarden
+              </a>
+            </li>
+            <li class="sm:inline block text-center">
+              <a href="" class="text-md underline sm:pl-3 text-white sm:border-l border-white">
+                Privacy- en cookiebeleid
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
